@@ -1,0 +1,239 @@
+
+.container {
+  background-color: rgb(0, 255, 255);
+  backdrop-filter: blur(20px);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.formContainer {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.form {
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  color: #444;
+  margin: 20px 0;
+  font-size: 1.5rem;
+}
+
+input,
+textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 10px auto;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+}
+
+textarea {
+  resize: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+/* Skills Section */
+.inputGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 10px auto;
+}
+
+.inputGroup .input {
+  width: 70%;
+}
+
+.input {
+  width: 100%;
+}
+
+/* Project Section */
+.projectGroup {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 15px auto;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  width: 90%;
+}
+
+.projectGroup input,
+.projectGroup textarea {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Education Section */
+.educationGroup {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 15px auto;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  width: 90%;
+}
+
+.educationGroup input {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+/* Technical Skills Section */
+.technicalSkillsGroup {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 15px auto;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  width: 90%;
+}
+
+.technicalSkillsGroup h3 {
+  text-align: left;
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.technicalSkillsGroup .inputGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.technicalSkillsGroup .input {
+  width: 70%;
+}
+
+.technicalSkillsGroup button {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+
+/* Remove Button */
+.remove {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button[type="button"] {
+  background-color: #007bff;
+  color: white;
+}
+
+button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+}
+
+button.remove {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+/* Button Group Alignment */
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.buttonGroup button {
+  min-width: 100px;
+}
+
+/* Center Alignment for Form Sections */
+.formContainer h2,
+.formContainer input,
+.formContainer textarea,
+.formContainer .projectGroup,
+.formContainer .educationGroup {
+  text-align: left;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .formContainer {
+    padding: 15px;
+  }
+
+  input,
+  textarea {
+    width: 95%;
+  }
+
+  .inputGroup .input {
+    width: 65%;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .technicalSkillsGroup {
+    width: 95%;
+  }
+
+  .technicalSkillsGroup .inputGroup {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .technicalSkillsGroup .input {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}

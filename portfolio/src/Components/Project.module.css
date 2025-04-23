@@ -1,0 +1,153 @@
+.projectContainer {
+    background-color: #f5f7fa;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 2rem auto;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  .contentWrapper {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .sectionHeader {
+    color: #1a3c5e;
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    position: relative;
+  }
+  
+  .sectionHeader::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #2ecc71;
+    margin: 0.5rem auto;
+  }
+  
+  .projectInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .label {
+    color: #9c2989;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .projectTitle {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  .projectDescription {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  .projectTechnology {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  .loadingText,
+  .errorText {
+    color: #34495e;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .errorText {
+    color: #e74c3c;
+  }
+  
+  .retryButton {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.8rem 1.5rem;
+    background-color: #2ecc71;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .retryButton:hover {
+    background-color: #27ae60;
+  }
+  
+  .retryButton:focus {
+    outline: 2px solid #1a3c5e;
+    outline-offset: 2px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .projectContainer {
+      padding: 1.5rem;
+      margin: 1rem;
+    }
+  
+    .sectionHeader {
+      font-size: 1.8rem;
+    }
+  
+    .label {
+      font-size: 1.2rem;
+    }
+  
+    .projectTitle,
+    .projectDescription,
+    .projectTechnology {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sectionHeader {
+      font-size: 1.6rem;
+    }
+  
+    .label {
+      font-size: 1.1rem;
+    }
+  
+    .projectTitle,
+    .projectDescription,
+    .projectTechnology {
+      font-size: 0.95rem;
+    }
+  }
